@@ -559,7 +559,7 @@ func CreateSecretForSSO(f *framework.Framework, ctx *framework.TestCtx, target t
 
 func WaitForPodUpdates(t *testing.T, f *framework.Framework, ctx *framework.TestCtx, target types.NamespacedName, replicas int) error {
 	retryInterval := time.Second * 2
-	timeout := time.Second * 30
+	timeout := time.Second * 45
 	// give operator a moment to kick off NEW pod
 	// wait for only the new pod to be running
 	err := wait.Poll(retryInterval, timeout, func() (done bool, err error) {
