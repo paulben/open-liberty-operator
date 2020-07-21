@@ -19,25 +19,25 @@ type Test struct {
 
 var (
 	basicTests = []Test{
-		// {"OpenLibertyPullPolicyTest", OpenLibertyPullPolicyTest},
-		// {"OpenLibertyBasicTest", OpenLibertyBasicTest},
-		// {"OpenLibertyProbeTest", OpenLibertyProbeTest},
-		// {"OpenLibertyAutoScalingTest", OpenLibertyAutoScalingTest},
-		// {"OpenLibertyStorageTest", OpenLibertyBasicStorageTest},
-		// {"OpenLibertyPersistenceTest", OpenLibertyPersistenceTest},
-		// {"OpenLibertyTraceTest", OpenLibertyTraceTest},
+		{"OpenLibertyPullPolicyTest", OpenLibertyPullPolicyTest},
+		{"OpenLibertyBasicTest", OpenLibertyBasicTest},
+		{"OpenLibertyProbeTest", OpenLibertyProbeTest},
+		{"OpenLibertyAutoScalingTest", OpenLibertyAutoScalingTest},
+		{"OpenLibertyStorageTest", OpenLibertyBasicStorageTest},
+		{"OpenLibertyPersistenceTest", OpenLibertyPersistenceTest},
+		{"OpenLibertyTraceTest", OpenLibertyTraceTest},
 	}
 	advancedTests = []Test{
-		// {"OpenLibertyServiceMonitorTest", OpenLibertyServiceMonitorTest},
-		// {"OpenLibertyKnativeTest", OpenLibertyKnativeTest},
-		// {"OpenLibertyServiceBindingTest", OpenLibertyServiceBindingTest},
-		// {"OpenLibertyCertManagerTest", OpenLibertyCertManagerTest},
-		// {"OpenLibertyDumpsTest", OpenLibertyDumpsTest},
-		// {"OpenLibertyKappNavTest", OpenLibertyKappNavTest},
+		{"OpenLibertyServiceMonitorTest", OpenLibertyServiceMonitorTest},
+		{"OpenLibertyKnativeTest", OpenLibertyKnativeTest},
+		{"OpenLibertyServiceBindingTest", OpenLibertyServiceBindingTest},
+		{"OpenLibertyCertManagerTest", OpenLibertyCertManagerTest},
+		{"OpenLibertyDumpsTest", OpenLibertyDumpsTest},
+		{"OpenLibertyKappNavTest", OpenLibertyKappNavTest},
 		{"OpenLibertySSOTest", OpenLibertySSOTest},
 	}
 	ocpTests = []Test{
-		// {"OpenLibertyImageStreamTest", OpenLibertyImageStreamTest},
+		{"OpenLibertyImageStreamTest", OpenLibertyImageStreamTest},
 	}
 	independantTests = []Test{}
 )
