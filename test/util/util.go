@@ -585,6 +585,7 @@ func WaitForPodUpdates(t *testing.T, f *framework.Framework, ctx *framework.Test
 		}
 
 		t.Log("waiting for pods to finish updating")
+		t.Log(podList.Items)
 		return false, nil
 	})
 
