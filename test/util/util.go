@@ -561,7 +561,6 @@ func WaitForPodUpdates(t *testing.T, f *framework.Framework, ctx *framework.Test
 	retryInterval := time.Second * 2
 	timeout := time.Second * 30
 	// give operator a moment to kick off NEW pod
-	time.Sleep(time.Second * 4)
 	// wait for only the new pod to be running
 	err := wait.Poll(retryInterval, timeout, func() (done bool, err error) {
 		podList, err := GetPods(f, ctx, target.Name, target.Namespace)
@@ -585,7 +584,7 @@ func WaitForPodUpdates(t *testing.T, f *framework.Framework, ctx *framework.Test
 		}
 
 		t.Log("waiting for pods to finish updating")
-		t.Log(podList.Items)
+		t.Logf("Total: %d, Running: %d, Target: %d", len(podList.Items), runningPods, replicas)
 		return false, nil
 	})
 
